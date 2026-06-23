@@ -1,0 +1,18 @@
+```json
+{
+    "test_case_id": "TC003",
+    "automation_steps": [
+        "Launch the application.",
+        "Navigate to the login screen.",
+        "Enter valid phone number to request OTP.",
+        "Tap on 'Request OTP' button.",
+        "Wait for the OTP to expire (simulate or wait until expiry).",
+        "Verify that 'Resend OTP' button becomes enabled.",
+        "Tap on 'Resend OTP' button.",
+        "Verify that a new OTP is sent (simulate receiving the new OTP or check confirmation message).",
+        "Enter the new OTP received.",
+        "Tap on 'Login' button.",
+        "Verify that user is successfully logged in (check for navigational changes or welcome message)."
+    ]
+}
+```

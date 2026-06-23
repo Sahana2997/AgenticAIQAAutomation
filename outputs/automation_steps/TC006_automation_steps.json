@@ -1,0 +1,21 @@
+```json
+{
+    "test_case_id": "TC006",
+    "automation_steps": [
+        "Launch the application and verify that the home screen is displayed.",
+        "Navigate to the login screen.",
+        "Enter a valid username in the username field.",
+        "Enter a valid password in the password field.",
+        "Submit the login form to proceed to the OTP verification screen.",
+        "Wait for the OTP input field to be displayed.",
+        "Verify that the OTP input field is visible.",
+        "Wait for the OTP to expire (simulate waiting time or use a mock for OTP expiration).",
+        "Enter the expired OTP in the OTP input field.",
+        "Submit the OTP verification form.",
+        "Verify that the system displays a message indicating that the OTP has expired.",
+        "Verify that the user is not logged in to the application.",
+        "Verify that there is an option to request a new OTP.",
+        "Navigate back to the home screen to reset the app state."
+    ]
+}
+```

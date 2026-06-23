@@ -1,0 +1,43 @@
+```json
+{
+    "test_case_id": "TC001",
+    "automation_steps": [
+        {
+            "step": "Launch the application.",
+            "verification": "Verify the application splash screen or launch screen is displayed."
+        },
+        {
+            "step": "Navigate to the login screen.",
+            "verification": "Ensure the login screen is displayed with fields for mobile number and OTP."
+        },
+        {
+            "step": "Enter a registered mobile number into the mobile number field.",
+            "verification": "Verify the mobile number is correctly entered and displayed in the input field."
+        },
+        {
+            "step": "Click on the 'Send OTP' button.",
+            "verification": "Ensure a message or indication is displayed that the OTP has been sent to the mobile number."
+        },
+        {
+            "step": "Retrieve the OTP from the simulated SMS or backend service.",
+            "verification": "Validate that the OTP is in the expected format."
+        },
+        {
+            "step": "Enter the received OTP into the OTP field.",
+            "verification": "Ensure the OTP is correctly entered and displayed in the input field."
+        },
+        {
+            "step": "Click on the 'Login' or 'Submit' button.",
+            "verification": "Verify that the login process begins and loading indicator is present if applicable."
+        },
+        {
+            "step": "Wait for the login process to complete.",
+            "verification": "Verify that the user is successfully logged in and navigated to the application home/dashboard."
+        },
+        {
+            "step": "Check the dashboard elements to confirm successful login.",
+            "verification": "Verify that specific elements of the dashboard or home screen are visible, indicating a successful login."
+        }
+    ]
+}
+```

@@ -1,0 +1,20 @@
+```json
+{
+    "test_case_id": "TC004",
+    "automation_steps": [
+        "Launch the mobile application.",
+        "Navigate to the login screen.",
+        "Enter the registered phone number or user identifier in the appropriate text field.",
+        "Request an OTP to be sent to the registered phone number or user identifier.",
+        "Wait for the OTP input field to be visible and active on the screen.",
+        "Enter the OTP ensuring it matches the required format and length.",
+        "Verify that the OTP was entered correctly in the designated OTP input field.",
+        "Click the submit or login button to proceed.",
+        "Verify that the application processes the OTP and allows the user to log in if the OTP is correct.",
+        "Check that the user is redirected to the home/dashboard screen post successful login.",
+        "Verify there is a message or indication that login is successful.",
+        "In case of OTP format/length mismatch, verify that an appropriate error message is displayed.",
+        "Ensure no other errors or warnings are present and the UI is intact."
+    ]
+}
+```

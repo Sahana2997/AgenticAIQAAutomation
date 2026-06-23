@@ -1,0 +1,33 @@
+```json
+{
+    "test_case_id": "TC007",
+    "automation_steps": [
+        {
+            "step_description": "Launch the application",
+            "action": "launch_app"
+        },
+        {
+            "step_description": "Navigate to Login Screen",
+            "action": "navigate",
+            "navigation_path": "Home -> Login"
+        },
+        {
+            "step_description": "Enter an unregistered mobile number into the mobile number field",
+            "action": "input_text",
+            "element": "mobile_number_field",
+            "text": "Enter unregistered mobile number"
+        },
+        {
+            "step_description": "Click the Login button",
+            "action": "click",
+            "element": "login_button"
+        },
+        {
+            "step_description": "Verify that an error message is displayed",
+            "action": "verify_element_text",
+            "element": "error_message_text",
+            "expected_text": "The mobile number is not registered"
+        }
+    ]
+}
+```

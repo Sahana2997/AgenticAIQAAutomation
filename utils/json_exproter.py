@@ -2,7 +2,7 @@ import json
 
 def save_testcases_json(response_json):
 
-    with open("outputs/generated_testcases.json",
+    with open("outputs/testcases/generated_testcases.json",
         "w"
         ) as file:
              json.dump(

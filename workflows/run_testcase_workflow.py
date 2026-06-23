@@ -20,7 +20,7 @@ save_testcases_json(response_json)
 export_to_excel(response_json)
 
 # get automation test cases from the locally saved JSON
-with open("outputs/generated_testcases.json") as file:
+with open("outputs/testcases/generated_testcases.json") as file:
     saved_response_json = json.load(file)
 
 automation_testcases = get_automation_testcases(

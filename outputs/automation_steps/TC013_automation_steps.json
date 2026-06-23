@@ -1,0 +1,19 @@
+```json
+{
+    "test_case_id": "TC013",
+    "automation_steps": [
+        "Launch the mobile application.",
+        "Navigate to the login or registration screen where OTP input is required.",
+        "Identify and focus on the OTP input field.",
+        "Attempt to input alphabetic characters into the OTP field.",
+        "Verify that alphabetic inputs are rejected or blocked.",
+        "Attempt to input special characters into the OTP field.",
+        "Verify that special character inputs are rejected or blocked.",
+        "Attempt to input numeric digits into the OTP field.",
+        "Verify that numeric inputs are accepted.",
+        "Verify the OTP field displays only the numeric digits entered.",
+        "Log the result of the verification steps for reporting.",
+        "Exit the mobile application."
+    ]
+}
+```

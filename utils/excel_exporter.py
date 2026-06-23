@@ -9,7 +9,7 @@ def export_to_excel(response_json):
     print(df)
 
     df.to_excel(
-        "outputs/generated_testcases.xlsx",
+        "outputs/testcases/generated_testcases.xlsx",
         index=False
     )
 

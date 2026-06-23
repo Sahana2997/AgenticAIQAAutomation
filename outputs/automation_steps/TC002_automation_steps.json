@@ -1,0 +1,40 @@
+```json
+{
+    "test_case_id": "TC002",
+    "automation_steps": [
+        {
+            "step_description": "Launch the mobile application.",
+            "action": "LaunchApp",
+            "verification": "Verify that the application is launched successfully."
+        },
+        {
+            "step_description": "Navigate to the login screen.",
+            "action": "NavigateToLoginScreen",
+            "verification": "Verify that the login screen is displayed."
+        },
+        {
+            "step_description": "Enter a valid registered mobile number in the mobile number input field.",
+            "action": "EnterText",
+            "input_data": "ValidRegisteredMobileNumber",
+            "target_element": "MobileNumberInputField",
+            "verification": "Verify that the valid registered mobile number is entered into the input field."
+        },
+        {
+            "step_description": "Tap on the 'Request OTP' button.",
+            "action": "TapButton",
+            "target_element": "RequestOtpButton",
+            "verification": "Verify that the OTP request is being processed (e.g., loading indicator is displayed)."
+        },
+        {
+            "step_description": "Wait for OTP generation.",
+            "action": "Wait",
+            "duration": "SpecifiedWaitDurationForOTP"
+        },
+        {
+            "step_description": "Verify that an OTP is generated and sent to the registered mobile number.",
+            "action": "VerifyOtpSent",
+            "verification": "Confirm that a success message or notification indicating OTP has been sent to the registered number is displayed."
+        }
+    ]
+}
+```

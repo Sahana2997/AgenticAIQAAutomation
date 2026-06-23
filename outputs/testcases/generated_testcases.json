@@ -1,0 +1,139 @@
+{
+    "test_cases": [
+        {
+            "test_case_id": "TC001",
+            "test_case": "Verify user can log in with a registered mobile number and valid OTP",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Positive",
+            "priority": "High",
+            "expected_result": "User is successfully logged in and redirected to the application home/dashboard"
+        },
+        {
+            "test_case_id": "TC002",
+            "test_case": "Verify user can request OTP for a valid registered mobile number",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Positive",
+            "priority": "High",
+            "expected_result": "OTP is generated and sent to the registered mobile number"
+        },
+        {
+            "test_case_id": "TC003",
+            "test_case": "Verify user can resend OTP after OTP expiry",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Positive",
+            "priority": "High",
+            "expected_result": "A new OTP is sent and can be used successfully for login"
+        },
+        {
+            "test_case_id": "TC004",
+            "test_case": "Verify user can log in with OTP entered in correct format/length",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Validation",
+            "priority": "High",
+            "expected_result": "OTP is accepted only when it matches the required format and length"
+        },
+        {
+            "test_case_id": "TC005",
+            "test_case": "Verify login fails when OTP is incorrect",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Negative",
+            "priority": "High",
+            "expected_result": "User remains on login screen and receives an invalid OTP message"
+        },
+        {
+            "test_case_id": "TC006",
+            "test_case": "Verify login fails when OTP is expired",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Negative",
+            "priority": "High",
+            "expected_result": "User is not logged in and is prompted to request a new OTP"
+        },
+        {
+            "test_case_id": "TC007",
+            "test_case": "Verify login fails when mobile number is not registered",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Negative",
+            "priority": "High",
+            "expected_result": "System displays an error stating the mobile number is not registered"
+        },
+        {
+            "test_case_id": "TC008",
+            "test_case": "Verify user can enter the minimum valid mobile number length accepted by the application",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Boundary",
+            "priority": "Medium",
+            "expected_result": "Mobile number at minimum valid length is accepted for OTP request"
+        },
+        {
+            "test_case_id": "TC009",
+            "test_case": "Verify user can enter the maximum valid mobile number length accepted by the application",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Boundary",
+            "priority": "Medium",
+            "expected_result": "Mobile number at maximum valid length is accepted for OTP request"
+        },
+        {
+            "test_case_id": "TC010",
+            "test_case": "Verify mobile number field rejects input below minimum length",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Boundary",
+            "priority": "Medium",
+            "expected_result": "System shows validation error and does not allow OTP request"
+        },
+        {
+            "test_case_id": "TC011",
+            "test_case": "Verify mobile number field rejects input above maximum length",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Boundary",
+            "priority": "Medium",
+            "expected_result": "System shows validation error and does not allow OTP request"
+        },
+        {
+            "test_case_id": "TC012",
+            "test_case": "Verify mobile number field accepts only numeric digits and rejects alphabets/special characters",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Validation",
+            "priority": "High",
+            "expected_result": "Non-numeric input is rejected or sanitized and validation message is shown"
+        },
+        {
+            "test_case_id": "TC013",
+            "test_case": "Verify OTP field accepts only numeric digits",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Validation",
+            "priority": "High",
+            "expected_result": "Alphabetic and special character inputs are rejected or blocked"
+        },
+        {
+            "test_case_id": "TC014",
+            "test_case": "Verify OTP field rejects input shorter than required OTP length",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Boundary",
+            "priority": "Medium",
+            "expected_result": "System shows OTP length validation error and prevents login"
+        },
+        {
+            "test_case_id": "TC015",
+            "test_case": "Verify OTP field rejects input longer than required OTP length",
+            "automation_candidate": true,
+            "automation_reson": "Critical business flow, frequently executed, stable, and repeatable",
+            "category": "Boundary",
+            "priority": "Medium",
+            "expected_result": "System shows OTP length validation error and prevents login"
+        }
+    ]
+}

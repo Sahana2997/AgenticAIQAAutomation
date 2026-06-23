@@ -1,0 +1,43 @@
+```json
+{
+    "test_case_id": "TC005",
+    "automation_steps": [
+        {
+            "step": "Launch the application.",
+            "action": "Open the mobile application on the device."
+        },
+        {
+            "step": "Navigate to the login screen.",
+            "action": "Verify if the application is on the home screen and navigate to the login screen if necessary."
+        },
+        {
+            "step": "Enter username.",
+            "action": "Locate the username input field and enter a valid username."
+        },
+        {
+            "step": "Enter password.",
+            "action": "Locate the password input field and enter a valid password."
+        },
+        {
+            "step": "Submit login credentials.",
+            "action": "Locate and click the submit or login button to proceed to the OTP verification screen."
+        },
+        {
+            "step": "Enter incorrect OTP.",
+            "action": "On the OTP verification screen, locate the OTP input field and enter an incorrect OTP."
+        },
+        {
+            "step": "Submit OTP.",
+            "action": "Click the submit or verify button to attempt OTP verification."
+        },
+        {
+            "step": "Verify login failure.",
+            "action": "Check for the presence of an error message indicating that the OTP is invalid."
+        },
+        {
+            "step": "Verify user remains on the login screen.",
+            "action": "Ensure the application does not navigate away from the current login or OTP verification screen."
+        }
+    ]
+}
+```
