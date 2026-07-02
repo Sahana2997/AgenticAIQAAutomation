@@ -1,21 +1,62 @@
-```json
 {
     "test_case_id": "TC006",
+    "screen_name": "LoginScreen",
     "automation_steps": [
-        "Launch the application and verify that the home screen is displayed.",
-        "Navigate to the login screen.",
-        "Enter a valid username in the username field.",
-        "Enter a valid password in the password field.",
-        "Submit the login form to proceed to the OTP verification screen.",
-        "Wait for the OTP input field to be displayed.",
-        "Verify that the OTP input field is visible.",
-        "Wait for the OTP to expire (simulate waiting time or use a mock for OTP expiration).",
-        "Enter the expired OTP in the OTP input field.",
-        "Submit the OTP verification form.",
-        "Verify that the system displays a message indicating that the OTP has expired.",
-        "Verify that the user is not logged in to the application.",
-        "Verify that there is an option to request a new OTP.",
-        "Navigate back to the home screen to reset the app state."
+        {
+            "step_no": 1,
+            "action": "navigate",
+            "object": "LoginScreen",
+            "input_data": "",
+            "verification": ""
+        },
+        {
+            "step_no": 2,
+            "action": "enter_text",
+            "object": "username_field",
+            "input_data": "valid_username",
+            "verification": ""
+        },
+        {
+            "step_no": 3,
+            "action": "tap",
+            "object": "send_otp_button",
+            "input_data": "",
+            "verification": ""
+        },
+        {
+            "step_no": 4,
+            "action": "delay_execution",
+            "object": "",
+            "input_data": "time_until_otp_expires",
+            "verification": ""
+        },
+        {
+            "step_no": 5,
+            "action": "enter_text",
+            "object": "otp_field",
+            "input_data": "expired_otp",
+            "verification": ""
+        },
+        {
+            "step_no": 6,
+            "action": "tap",
+            "object": "login_button",
+            "input_data": "",
+            "verification": ""
+        },
+        {
+            "step_no": 7,
+            "action": "verify_text",
+            "object": "otp_error_message",
+            "input_data": "",
+            "verification": "OTP is expired"
+        },
+        {
+            "step_no": 8,
+            "action": "verify_element_present",
+            "object": "request_new_otp_button",
+            "input_data": "",
+            "verification": "New OTP request is possible"
+        }
     ]
 }
-```

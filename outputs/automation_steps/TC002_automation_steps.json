@@ -1,40 +1,41 @@
-```json
 {
     "test_case_id": "TC002",
+    "screen_name": "Login Screen",
     "automation_steps": [
         {
-            "step_description": "Launch the mobile application.",
-            "action": "LaunchApp",
-            "verification": "Verify that the application is launched successfully."
+            "step_no": 1,
+            "action": "Launch",
+            "object": "Mobile App",
+            "input_data": "",
+            "verification": "Verify the app is launched successfully"
         },
         {
-            "step_description": "Navigate to the login screen.",
-            "action": "NavigateToLoginScreen",
-            "verification": "Verify that the login screen is displayed."
+            "step_no": 2,
+            "action": "Navigate",
+            "object": "Login Screen",
+            "input_data": "",
+            "verification": "Verify the user is on the Login Screen"
         },
         {
-            "step_description": "Enter a valid registered mobile number in the mobile number input field.",
-            "action": "EnterText",
-            "input_data": "ValidRegisteredMobileNumber",
-            "target_element": "MobileNumberInputField",
-            "verification": "Verify that the valid registered mobile number is entered into the input field."
+            "step_no": 3,
+            "action": "Enter",
+            "object": "Mobile Number Field",
+            "input_data": "Valid Registered Mobile Number",
+            "verification": "Verify the mobile number is entered correctly"
         },
         {
-            "step_description": "Tap on the 'Request OTP' button.",
-            "action": "TapButton",
-            "target_element": "RequestOtpButton",
-            "verification": "Verify that the OTP request is being processed (e.g., loading indicator is displayed)."
+            "step_no": 4,
+            "action": "Click",
+            "object": "Request OTP Button",
+            "input_data": "",
+            "verification": "Verify the OTP request is initiated"
         },
         {
-            "step_description": "Wait for OTP generation.",
+            "step_no": 5,
             "action": "Wait",
-            "duration": "SpecifiedWaitDurationForOTP"
-        },
-        {
-            "step_description": "Verify that an OTP is generated and sent to the registered mobile number.",
-            "action": "VerifyOtpSent",
-            "verification": "Confirm that a success message or notification indicating OTP has been sent to the registered number is displayed."
+            "object": "OTP Notification",
+            "input_data": "",
+            "verification": "Verify the OTP is generated and received on the mobile number"
         }
     ]
 }
-```

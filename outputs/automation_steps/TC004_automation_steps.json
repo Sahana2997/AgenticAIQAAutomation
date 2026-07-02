@@ -1,20 +1,48 @@
-```json
 {
     "test_case_id": "TC004",
+    "screen_name": "Login Screen",
     "automation_steps": [
-        "Launch the mobile application.",
-        "Navigate to the login screen.",
-        "Enter the registered phone number or user identifier in the appropriate text field.",
-        "Request an OTP to be sent to the registered phone number or user identifier.",
-        "Wait for the OTP input field to be visible and active on the screen.",
-        "Enter the OTP ensuring it matches the required format and length.",
-        "Verify that the OTP was entered correctly in the designated OTP input field.",
-        "Click the submit or login button to proceed.",
-        "Verify that the application processes the OTP and allows the user to log in if the OTP is correct.",
-        "Check that the user is redirected to the home/dashboard screen post successful login.",
-        "Verify there is a message or indication that login is successful.",
-        "In case of OTP format/length mismatch, verify that an appropriate error message is displayed.",
-        "Ensure no other errors or warnings are present and the UI is intact."
+        {
+            "step_no": 1,
+            "action": "Launch",
+            "object": "Mobile Application",
+            "input_data": "",
+            "verification": "Verify application is launched successfully."
+        },
+        {
+            "step_no": 2,
+            "action": "Navigate",
+            "object": "Login Screen",
+            "input_data": "",
+            "verification": "Verify user is on the login screen."
+        },
+        {
+            "step_no": 3,
+            "action": "Input",
+            "object": "Phone Number Field",
+            "input_data": "User's registered phone number",
+            "verification": "Verify phone number is entered correctly."
+        },
+        {
+            "step_no": 4,
+            "action": "Click",
+            "object": "Send OTP Button",
+            "input_data": "",
+            "verification": "Verify OTP is sent to the user's registered phone number."
+        },
+        {
+            "step_no": 5,
+            "action": "Input",
+            "object": "OTP Field",
+            "input_data": "Valid OTP matching required format and length",
+            "verification": "Verify OTP is entered in the correct format and length."
+        },
+        {
+            "step_no": 6,
+            "action": "Click",
+            "object": "Submit Button",
+            "input_data": "",
+            "verification": "Verify user is logged in successfully or appropriate message is displayed for wrong format/length."
+        }
     ]
 }
-```

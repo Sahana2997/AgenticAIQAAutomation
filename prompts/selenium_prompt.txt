@@ -4,7 +4,15 @@ Convert the test case into automation steps.
 Rules:
 1.Break actions into logical steps.
 2.Include verification steps.
-3.Return JSON ONLY
+
+
+Return ONLY valid JSON. 
+Do NOT wrap the JSON in markdown.
+Do NOT use ```json or ```.
+
+Your response must start with {
+and end with }.
+
 
 Format:
 {

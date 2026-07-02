@@ -1,43 +1,55 @@
-```json
 {
     "test_case_id": "TC001",
+    "screen_name": "Login",
     "automation_steps": [
         {
-            "step": "Launch the application.",
-            "verification": "Verify the application splash screen or launch screen is displayed."
+            "step_no": 1,
+            "action": "Launch",
+            "object": "Application",
+            "input_data": "",
+            "verification": ""
         },
         {
-            "step": "Navigate to the login screen.",
-            "verification": "Ensure the login screen is displayed with fields for mobile number and OTP."
+            "step_no": 2,
+            "action": "Enter",
+            "object": "Mobile Number Input Field",
+            "input_data": "Registered Mobile Number",
+            "verification": ""
         },
         {
-            "step": "Enter a registered mobile number into the mobile number field.",
-            "verification": "Verify the mobile number is correctly entered and displayed in the input field."
+            "step_no": 3,
+            "action": "Click",
+            "object": "Get OTP Button",
+            "input_data": "",
+            "verification": ""
         },
         {
-            "step": "Click on the 'Send OTP' button.",
-            "verification": "Ensure a message or indication is displayed that the OTP has been sent to the mobile number."
+            "step_no": 4,
+            "action": "Wait",
+            "object": "OTP Input Field",
+            "input_data": "Until OTP is received",
+            "verification": ""
         },
         {
-            "step": "Retrieve the OTP from the simulated SMS or backend service.",
-            "verification": "Validate that the OTP is in the expected format."
+            "step_no": 5,
+            "action": "Enter",
+            "object": "OTP Input Field",
+            "input_data": "Valid OTP",
+            "verification": ""
         },
         {
-            "step": "Enter the received OTP into the OTP field.",
-            "verification": "Ensure the OTP is correctly entered and displayed in the input field."
+            "step_no": 6,
+            "action": "Click",
+            "object": "Login Button",
+            "input_data": "",
+            "verification": ""
         },
         {
-            "step": "Click on the 'Login' or 'Submit' button.",
-            "verification": "Verify that the login process begins and loading indicator is present if applicable."
-        },
-        {
-            "step": "Wait for the login process to complete.",
-            "verification": "Verify that the user is successfully logged in and navigated to the application home/dashboard."
-        },
-        {
-            "step": "Check the dashboard elements to confirm successful login.",
-            "verification": "Verify that specific elements of the dashboard or home screen are visible, indicating a successful login."
+            "step_no": 7,
+            "action": "Verify",
+            "object": "Home/Dashboard Screen",
+            "input_data": "",
+            "verification": "User is successfully logged in and redirected to the application home/dashboard"
         }
     ]
 }
-```

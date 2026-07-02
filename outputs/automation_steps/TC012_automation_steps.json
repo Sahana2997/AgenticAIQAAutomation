@@ -1,43 +1,41 @@
-```json
 {
     "test_case_id": "TC012",
+    "screen_name": "Mobile Number Entry Screen",
     "automation_steps": [
         {
-            "step_description": "Launch the application.",
-            "expected_result": "The application is launched and is in the initial state."
+            "step_no": 1,
+            "action": "Navigate",
+            "object": "Mobile Number Entry Screen",
+            "input_data": "",
+            "verification": ""
         },
         {
-            "step_description": "Navigate to the form or screen containing the mobile number field.",
-            "expected_result": "User navigates to the correct form or screen with the mobile number field visible."
+            "step_no": 2,
+            "action": "Input",
+            "object": "Mobile Number Field",
+            "input_data": "1234567890",
+            "verification": "Verify numeric input is accepted"
         },
         {
-            "step_description": "Attempt to input alphabets into the mobile number field.",
-            "expected_result": "Alphabets are not accepted, and possibly a validation message is shown."
+            "step_no": 3,
+            "action": "Input",
+            "object": "Mobile Number Field",
+            "input_data": "abcde",
+            "verification": "Verify alphabetic input is rejected"
         },
         {
-            "step_description": "Verify the field does not accept alphabets, and check for validation message presence.",
-            "expected_result": "Alphabets should not be present in the input field, and a validation message is displayed indicating invalid input."
+            "step_no": 4,
+            "action": "Input",
+            "object": "Mobile Number Field",
+            "input_data": "@#$%",
+            "verification": "Verify special character input is rejected"
         },
         {
-            "step_description": "Attempt to input special characters into the mobile number field.",
-            "expected_result": "Special characters are not accepted, and possibly a validation message is shown."
-        },
-        {
-            "step_description": "Verify the field does not accept special characters, and check for validation message presence.",
-            "expected_result": "Special characters should not be present in the input field, and a validation message is displayed indicating invalid input."
-        },
-        {
-            "step_description": "Input numeric digits into the mobile number field.",
-            "expected_result": "Numeric digits are accepted without any validation errors."
-        },
-        {
-            "step_description": "Verify the field accepts only numeric digits.",
-            "expected_result": "Field should accept numeric input correctly, and no validation message should be displayed."
-        },
-        {
-            "step_description": "If applicable, submit the form to ensure no further validation errors are thrown.",
-            "expected_result": "Form submits successfully with valid numeric mobile number entry."
+            "step_no": 5,
+            "action": "Verify",
+            "object": "Validation Message",
+            "input_data": "",
+            "verification": "Verify validation message is shown for non-numeric input"
         }
     ]
 }
-```

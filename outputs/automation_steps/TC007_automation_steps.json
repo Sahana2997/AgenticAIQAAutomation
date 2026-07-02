@@ -1,33 +1,41 @@
-```json
 {
     "test_case_id": "TC007",
+    "screen_name": "Login",
     "automation_steps": [
         {
-            "step_description": "Launch the application",
-            "action": "launch_app"
+            "step_no": 1,
+            "action": "Launch",
+            "object": "Application",
+            "input_data": "",
+            "verification": "Verify app is launched successfully"
         },
         {
-            "step_description": "Navigate to Login Screen",
-            "action": "navigate",
-            "navigation_path": "Home -> Login"
+            "step_no": 2,
+            "action": "Navigate",
+            "object": "Login Screen",
+            "input_data": "",
+            "verification": "Verify Login screen is displayed"
         },
         {
-            "step_description": "Enter an unregistered mobile number into the mobile number field",
-            "action": "input_text",
-            "element": "mobile_number_field",
-            "text": "Enter unregistered mobile number"
+            "step_no": 3,
+            "action": "Enter",
+            "object": "Mobile Number Field",
+            "input_data": "Unregistered Mobile Number",
+            "verification": "Verify mobile number is entered"
         },
         {
-            "step_description": "Click the Login button",
-            "action": "click",
-            "element": "login_button"
+            "step_no": 4,
+            "action": "Click",
+            "object": "Login Button",
+            "input_data": "",
+            "verification": "Verify Login button is clicked"
         },
         {
-            "step_description": "Verify that an error message is displayed",
-            "action": "verify_element_text",
-            "element": "error_message_text",
-            "expected_text": "The mobile number is not registered"
+            "step_no": 5,
+            "action": "Wait",
+            "object": "Error Message",
+            "input_data": "",
+            "verification": "Verify error message is displayed stating the mobile number is not registered"
         }
     ]
 }
-```

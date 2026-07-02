@@ -1,43 +1,55 @@
-```json
 {
     "test_case_id": "TC005",
+    "screen_name": "Login Screen",
     "automation_steps": [
         {
-            "step": "Launch the application.",
-            "action": "Open the mobile application on the device."
+            "step_no": 1,
+            "action": "navigate",
+            "object": "app",
+            "input_data": "launch",
+            "verification": "Verify app is launched"
         },
         {
-            "step": "Navigate to the login screen.",
-            "action": "Verify if the application is on the home screen and navigate to the login screen if necessary."
+            "step_no": 2,
+            "action": "input",
+            "object": "username_field",
+            "input_data": "valid_username",
+            "verification": "Verify username is entered"
         },
         {
-            "step": "Enter username.",
-            "action": "Locate the username input field and enter a valid username."
+            "step_no": 3,
+            "action": "input",
+            "object": "password_field",
+            "input_data": "valid_password",
+            "verification": "Verify password is entered"
         },
         {
-            "step": "Enter password.",
-            "action": "Locate the password input field and enter a valid password."
+            "step_no": 4,
+            "action": "click",
+            "object": "login_button",
+            "input_data": "",
+            "verification": "Verify OTP screen is displayed"
         },
         {
-            "step": "Submit login credentials.",
-            "action": "Locate and click the submit or login button to proceed to the OTP verification screen."
+            "step_no": 5,
+            "action": "input",
+            "object": "otp_field",
+            "input_data": "incorrect_otp",
+            "verification": "Verify OTP is entered"
         },
         {
-            "step": "Enter incorrect OTP.",
-            "action": "On the OTP verification screen, locate the OTP input field and enter an incorrect OTP."
+            "step_no": 6,
+            "action": "click",
+            "object": "submit_button",
+            "input_data": "",
+            "verification": "Verify invalid OTP message is displayed"
         },
         {
-            "step": "Submit OTP.",
-            "action": "Click the submit or verify button to attempt OTP verification."
-        },
-        {
-            "step": "Verify login failure.",
-            "action": "Check for the presence of an error message indicating that the OTP is invalid."
-        },
-        {
-            "step": "Verify user remains on the login screen.",
-            "action": "Ensure the application does not navigate away from the current login or OTP verification screen."
+            "step_no": 7,
+            "action": "verify",
+            "object": "login_screen",
+            "input_data": "",
+            "verification": "Verify user remains on login screen"
         }
     ]
 }
-```
