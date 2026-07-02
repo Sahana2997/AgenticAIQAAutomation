@@ -1,0 +1,30 @@
+{
+    "test_case_id": "TC001",
+    "locators": [
+        {
+            "element": "Mobile Number Input Field",
+            "strategy": "resource-id",
+            "value": "com.app:id/email"
+        },
+        {
+            "element": "Get OTP Button",
+            "strategy": "XPath",
+            "value": "//android.widget.Button[@text='Get OTP']"
+        },
+        {
+            "element": "OTP Input Field",
+            "strategy": "resource-id",
+            "value": "com.app:id/password"
+        },
+        {
+            "element": "Login Button",
+            "strategy": "accessibility-id",
+            "value": "Login"
+        },
+        {
+            "element": "Home/Dashboard Screen",
+            "strategy": "XPath",
+            "value": "//android.widget.TextView[@text='Home' or @text='Dashboard']"
+        }
+    ]
+}
