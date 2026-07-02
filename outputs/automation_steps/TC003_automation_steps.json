@@ -1,0 +1,55 @@
+{
+    "test_case_id": "TC003",
+    "screen_name": "OTP Verification Screen",
+    "automation_steps": [
+        {
+            "step_no": 1,
+            "action": "Wait",
+            "object": "OTP Input Field",
+            "input_data": "60 seconds",
+            "verification": "Ensure OTP input is enabled"
+        },
+        {
+            "step_no": 2,
+            "action": "Verify",
+            "object": "Resend OTP Button",
+            "input_data": "",
+            "verification": "Ensure Resend OTP Button is displayed and enabled"
+        },
+        {
+            "step_no": 3,
+            "action": "Click",
+            "object": "Resend OTP Button",
+            "input_data": "",
+            "verification": ""
+        },
+        {
+            "step_no": 4,
+            "action": "Wait",
+            "object": "New OTP Message",
+            "input_data": "30 seconds",
+            "verification": "Ensure a new OTP message is received"
+        },
+        {
+            "step_no": 5,
+            "action": "Enter",
+            "object": "OTP Input Field",
+            "input_data": "<Newly Received OTP>",
+            "verification": ""
+        },
+        {
+            "step_no": 6,
+            "action": "Click",
+            "object": "Submit Button",
+            "input_data": "",
+            "verification": ""
+        },
+        {
+            "step_no": 7,
+            "action": "Verify",
+            "object": "Login Success Screen",
+            "input_data": "",
+            "verification": "Ensure successful login is displayed"
+        }
+    ]
+}

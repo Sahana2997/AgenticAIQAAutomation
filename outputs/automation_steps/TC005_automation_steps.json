@@ -1,0 +1,55 @@
+{
+    "test_case_id": "TC005",
+    "screen_name": "Login Screen",
+    "automation_steps": [
+        {
+            "step_no": 1,
+            "action": "navigate",
+            "object": "app",
+            "input_data": "launch",
+            "verification": "Verify app is launched"
+        },
+        {
+            "step_no": 2,
+            "action": "input",
+            "object": "username_field",
+            "input_data": "valid_username",
+            "verification": "Verify username is entered"
+        },
+        {
+            "step_no": 3,
+            "action": "input",
+            "object": "password_field",
+            "input_data": "valid_password",
+            "verification": "Verify password is entered"
+        },
+        {
+            "step_no": 4,
+            "action": "click",
+            "object": "login_button",
+            "input_data": "",
+            "verification": "Verify OTP screen is displayed"
+        },
+        {
+            "step_no": 5,
+            "action": "input",
+            "object": "otp_field",
+            "input_data": "incorrect_otp",
+            "verification": "Verify OTP is entered"
+        },
+        {
+            "step_no": 6,
+            "action": "click",
+            "object": "submit_button",
+            "input_data": "",
+            "verification": "Verify invalid OTP message is displayed"
+        },
+        {
+            "step_no": 7,
+            "action": "verify",
+            "object": "login_screen",
+            "input_data": "",
+            "verification": "Verify user remains on login screen"
+        }
+    ]
+}

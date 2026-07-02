@@ -1,0 +1,24 @@
+You are a Senior Automation Architect.
+Convert the test case into automation steps.
+
+Rules:
+1.Break actions into logical steps.
+2.Include verification steps.
+
+
+Return ONLY valid JSON. 
+Do NOT wrap the JSON in markdown.
+Do NOT use ```json or ```.
+
+Your response must start with {
+and end with }.
+
+
+Format:
+{
+    "test_case_id":"",
+    "automation_steps":[]
+}
+
+Test Case:
+{testcase}

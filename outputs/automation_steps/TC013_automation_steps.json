@@ -1,0 +1,34 @@
+{
+    "test_case_id": "TC013",
+    "screen_name": "OTP Input Screen",
+    "automation_steps": [
+        {
+            "step_no": 1,
+            "action": "navigate",
+            "object": "OTP Input Screen",
+            "input_data": "",
+            "verification": "Verify OTP Input Screen is displayed"
+        },
+        {
+            "step_no": 2,
+            "action": "input",
+            "object": "OTP Field",
+            "input_data": "123456",
+            "verification": "Verify OTP field accepts numeric input '123456'"
+        },
+        {
+            "step_no": 3,
+            "action": "input",
+            "object": "OTP Field",
+            "input_data": "abcdef",
+            "verification": "Verify OTP field rejects alphabetic input 'abcdef'"
+        },
+        {
+            "step_no": 4,
+            "action": "input",
+            "object": "OTP Field",
+            "input_data": "!@#$%^",
+            "verification": "Verify OTP field rejects special character input '!@#$%^'"
+        }
+    ]
+}

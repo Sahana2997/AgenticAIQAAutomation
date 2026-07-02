@@ -13,6 +13,24 @@ def generate_test_cases(requirement):
     2.Negative Test Cases
     3.Boundary Test Cases
     4.Validation Test Cases
+    
+    For each test case determine:
+    automation_candidate = true
+
+    IF:
+    - Critical Business flow
+    - Frequently executed
+    - Stable
+    - Repeatable
+
+    automation_candidate = false
+
+    IF:
+    - Visual validation required
+    - Rare edge case
+    - Human judgement required
+    - External dependency
+    - Unstable Wrokflow
 
     Requirement:
     {requirement}
@@ -22,16 +40,19 @@ def generate_test_cases(requirement):
     {{
         "test_cases":[
             {{
-                "test_case_id":"TC001",
-                "test_scenario":"",
+                "test_case_id":"TC001", 
                 "test_case":"",
+                "automation_candidate": true,
+                "automation_reson":"",
+                "category": "",
+                "priority":"",
                 "expected_result":""
             }}
         ]
     }}
     """
     response = client.chat.completions.create(
-        model = "gpt-5",
+        model = "gpt-5.4-mini",
         messages=[
             {
                 "role":"user",
@@ -40,7 +61,4 @@ def generate_test_cases(requirement):
         ]
     )
     result = response.choices[0].message.content
-
-    print(result , "Generate test case result")  # optional debugging
-
     return json.loads(result)

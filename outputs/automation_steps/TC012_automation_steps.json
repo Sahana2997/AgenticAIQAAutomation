@@ -1,0 +1,41 @@
+{
+    "test_case_id": "TC012",
+    "screen_name": "Mobile Number Entry Screen",
+    "automation_steps": [
+        {
+            "step_no": 1,
+            "action": "Navigate",
+            "object": "Mobile Number Entry Screen",
+            "input_data": "",
+            "verification": ""
+        },
+        {
+            "step_no": 2,
+            "action": "Input",
+            "object": "Mobile Number Field",
+            "input_data": "1234567890",
+            "verification": "Verify numeric input is accepted"
+        },
+        {
+            "step_no": 3,
+            "action": "Input",
+            "object": "Mobile Number Field",
+            "input_data": "abcde",
+            "verification": "Verify alphabetic input is rejected"
+        },
+        {
+            "step_no": 4,
+            "action": "Input",
+            "object": "Mobile Number Field",
+            "input_data": "@#$%",
+            "verification": "Verify special character input is rejected"
+        },
+        {
+            "step_no": 5,
+            "action": "Verify",
+            "object": "Validation Message",
+            "input_data": "",
+            "verification": "Verify validation message is shown for non-numeric input"
+        }
+    ]
+}

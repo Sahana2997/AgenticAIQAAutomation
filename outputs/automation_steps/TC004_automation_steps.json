@@ -1,0 +1,48 @@
+{
+    "test_case_id": "TC004",
+    "screen_name": "Login Screen",
+    "automation_steps": [
+        {
+            "step_no": 1,
+            "action": "Launch",
+            "object": "Mobile Application",
+            "input_data": "",
+            "verification": "Verify application is launched successfully."
+        },
+        {
+            "step_no": 2,
+            "action": "Navigate",
+            "object": "Login Screen",
+            "input_data": "",
+            "verification": "Verify user is on the login screen."
+        },
+        {
+            "step_no": 3,
+            "action": "Input",
+            "object": "Phone Number Field",
+            "input_data": "User's registered phone number",
+            "verification": "Verify phone number is entered correctly."
+        },
+        {
+            "step_no": 4,
+            "action": "Click",
+            "object": "Send OTP Button",
+            "input_data": "",
+            "verification": "Verify OTP is sent to the user's registered phone number."
+        },
+        {
+            "step_no": 5,
+            "action": "Input",
+            "object": "OTP Field",
+            "input_data": "Valid OTP matching required format and length",
+            "verification": "Verify OTP is entered in the correct format and length."
+        },
+        {
+            "step_no": 6,
+            "action": "Click",
+            "object": "Submit Button",
+            "input_data": "",
+            "verification": "Verify user is logged in successfully or appropriate message is displayed for wrong format/length."
+        }
+    ]
+}

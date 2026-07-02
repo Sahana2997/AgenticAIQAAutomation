@@ -1,0 +1,55 @@
+{
+    "test_case_id": "TC001",
+    "screen_name": "Login",
+    "automation_steps": [
+        {
+            "step_no": 1,
+            "action": "Launch",
+            "object": "Application",
+            "input_data": "",
+            "verification": ""
+        },
+        {
+            "step_no": 2,
+            "action": "Enter",
+            "object": "Mobile Number Input Field",
+            "input_data": "Registered Mobile Number",
+            "verification": ""
+        },
+        {
+            "step_no": 3,
+            "action": "Click",
+            "object": "Get OTP Button",
+            "input_data": "",
+            "verification": ""
+        },
+        {
+            "step_no": 4,
+            "action": "Wait",
+            "object": "OTP Input Field",
+            "input_data": "Until OTP is received",
+            "verification": ""
+        },
+        {
+            "step_no": 5,
+            "action": "Enter",
+            "object": "OTP Input Field",
+            "input_data": "Valid OTP",
+            "verification": ""
+        },
+        {
+            "step_no": 6,
+            "action": "Click",
+            "object": "Login Button",
+            "input_data": "",
+            "verification": ""
+        },
+        {
+            "step_no": 7,
+            "action": "Verify",
+            "object": "Home/Dashboard Screen",
+            "input_data": "",
+            "verification": "User is successfully logged in and redirected to the application home/dashboard"
+        }
+    ]
+}

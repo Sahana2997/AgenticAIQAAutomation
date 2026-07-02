@@ -1,0 +1,15 @@
+<hierarchy>
+
+<android.widget.EditText
+resource-id="com.app:id/email"
+text=""/>
+
+<android.widget.EditText
+resource-id="com.app:id/password"
+text=""/>
+
+<android.widget.Button
+content-desc="Login"
+text="LOGIN"/>
+
+</hierarchy>

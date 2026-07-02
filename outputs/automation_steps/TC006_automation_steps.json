@@ -1,0 +1,62 @@
+{
+    "test_case_id": "TC006",
+    "screen_name": "LoginScreen",
+    "automation_steps": [
+        {
+            "step_no": 1,
+            "action": "navigate",
+            "object": "LoginScreen",
+            "input_data": "",
+            "verification": ""
+        },
+        {
+            "step_no": 2,
+            "action": "enter_text",
+            "object": "username_field",
+            "input_data": "valid_username",
+            "verification": ""
+        },
+        {
+            "step_no": 3,
+            "action": "tap",
+            "object": "send_otp_button",
+            "input_data": "",
+            "verification": ""
+        },
+        {
+            "step_no": 4,
+            "action": "delay_execution",
+            "object": "",
+            "input_data": "time_until_otp_expires",
+            "verification": ""
+        },
+        {
+            "step_no": 5,
+            "action": "enter_text",
+            "object": "otp_field",
+            "input_data": "expired_otp",
+            "verification": ""
+        },
+        {
+            "step_no": 6,
+            "action": "tap",
+            "object": "login_button",
+            "input_data": "",
+            "verification": ""
+        },
+        {
+            "step_no": 7,
+            "action": "verify_text",
+            "object": "otp_error_message",
+            "input_data": "",
+            "verification": "OTP is expired"
+        },
+        {
+            "step_no": 8,
+            "action": "verify_element_present",
+            "object": "request_new_otp_button",
+            "input_data": "",
+            "verification": "New OTP request is possible"
+        }
+    ]
+}

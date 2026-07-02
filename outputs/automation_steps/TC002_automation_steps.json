@@ -1,0 +1,41 @@
+{
+    "test_case_id": "TC002",
+    "screen_name": "Login Screen",
+    "automation_steps": [
+        {
+            "step_no": 1,
+            "action": "Launch",
+            "object": "Mobile App",
+            "input_data": "",
+            "verification": "Verify the app is launched successfully"
+        },
+        {
+            "step_no": 2,
+            "action": "Navigate",
+            "object": "Login Screen",
+            "input_data": "",
+            "verification": "Verify the user is on the Login Screen"
+        },
+        {
+            "step_no": 3,
+            "action": "Enter",
+            "object": "Mobile Number Field",
+            "input_data": "Valid Registered Mobile Number",
+            "verification": "Verify the mobile number is entered correctly"
+        },
+        {
+            "step_no": 4,
+            "action": "Click",
+            "object": "Request OTP Button",
+            "input_data": "",
+            "verification": "Verify the OTP request is initiated"
+        },
+        {
+            "step_no": 5,
+            "action": "Wait",
+            "object": "OTP Notification",
+            "input_data": "",
+            "verification": "Verify the OTP is generated and received on the mobile number"
+        }
+    ]
+}
